@@ -19,10 +19,12 @@
 ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-06B6D4?logo=tailwind-css&logoColor=white)
+
 **后端**  
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white)
 ![Express](https://img.shields.io/badge/-Express-000000?logo=express&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?logo=mongodb&logoColor=white)
+
 **开发工具**  
 ![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white)
 ![ESLint](https://img.shields.io/badge/-ESLint-4B32C3?logo=eslint&logoColor=white)
@@ -96,9 +98,3 @@ todo-system/
 ## 许可证 📄
 
 本项目遵循 MIT 许可证。有关详细信息，请参阅[LICENSE](LICENSE)文件。
-
-## 联系信息 📧
-
-- 作者：Tian0613
-
-> 🌟 如果这个项目对你有帮助，欢迎给个 Star！
