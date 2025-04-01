@@ -8,10 +8,6 @@
 
 > 一个简洁、美观、功能完善的待办事项管理系统，帮助您高效管理日常任务。
 
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/41773797/131895542-a11b32a7-3f3f-44bf-b961-5cb8a58c9e3e.png" alt="分隔线" width="100%">
-</div>
-
 ## 📋 目录
 
 - [✨ 功能特点](#-功能特点)
