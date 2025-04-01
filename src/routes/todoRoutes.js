@@ -35,4 +35,36 @@ router.post('/todos/:id/delete', async (req, res) => {
   }
 });
 
+// 切换任务完成状态
+router.post('/todos/:id/toggle', async (req, res) => {
+  try {
+    const { completed } = req.body;
+    await Todo.findByIdAndUpdate(req.params.id, { completed });
+    res.status(200).json({ success: true });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// 更新任务内容
+router.post('/todos/:id/update', async (req, res) => {
+  try {
+    const { title } = req.body;
+    await Todo.findByIdAndUpdate(req.params.id, { title });
+    res.status(200).json({ success: true });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// 清除所有已完成任务
+router.post('/todos/clear-completed', async (req, res) => {
+  try {
+    await Todo.deleteMany({ completed: true });
+    res.status(200).json({ success: true });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 module.exports = router;

@@ -19,8 +19,10 @@ app.set('views', path.join(__dirname, 'views')); // 明确指定路径
 app.set('view engine', 'ejs');
 
 // 中间件
-app.use(express.static(path.join(__dirname, '../public'))); // 静态文件路径修正（如果 public 在 src 外）
+app.use(express.static(path.join(__dirname, 'public'))); // 静态文件路径修正
+app.use(express.static(path.join(__dirname, '../public'))); // 备用静态文件路径
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json()); // 支持JSON请求体
 
 // 路由
 app.use('/', todoRoutes);
